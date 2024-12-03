@@ -1,13 +1,15 @@
 # Compiler and flags
-CC = clang
-CFLAGS = -I/opt/homebrew/include
-LDFLAGS = -L/opt/homebrew/lib -lpng16 -lz
+CC = clang # whatever compiler you use
+CFLAGS = -I/opt/homebrew/include #add abs path to where the include folder of libpng is
+LDFLAGS = -L/opt/homebrew/lib -lpng16 -lz #add abs path to where libpng is
+#for me they where at this location yours might be different
+
 
 # Target executable
-TARGET = functions
+TARGET = Image_process
 
 # Source file
-SRC = functions.c
+SRC = Image_process.c ReadWrite.c
 
 # Build target
 $(TARGET): $(SRC)
@@ -16,7 +18,3 @@ $(TARGET): $(SRC)
 # Clean up build files
 clean:
 	rm -f $(TARGET)
-
-# Run the program
-run: $(TARGET)
-	./$(TARGET) img1.png output.png
