@@ -258,8 +258,8 @@ int main(int argc, char *argv[]) {
     }
 
     int num_threads = atoi(argv[4]);
-    if (num_threads != 1 && num_threads != 2 && num_threads != 8 &&
-        num_threads != 16 && num_threads != 32) {
+    if (!(num_threads == 1 || num_threads == 2 || num_threads == 8 ||
+        num_threads == 16 || num_threads == 32)) {
         fprintf(stderr, "Number of threads must be 1, 2, 8, 16, or 32.\n");
         exit(EXIT_FAILURE);
     }
