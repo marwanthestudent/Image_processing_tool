@@ -62,7 +62,7 @@ Screenshot from terminal  |
 :-------------------------:
 ![](https://github.com/user-attachments/assets/95bdf316-1074-4581-a028-9b66a384dea1)
 
-To display it, move image_process.1 to your manual's folder, for me it was 
+To display it, move image_process.1 to your manual's folder (in super user), for me it was 
 ```bash
 sudo mv image_process.1 /usr/Local/share/man/man1
 ```
