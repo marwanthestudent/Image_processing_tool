@@ -69,7 +69,7 @@ sudo mv image_process.1 /usr/Local/share/man/man1
 
 Then from the terminal you can display the manual by simply
 ```bash
-man man Image_process
+man Image_process
 ```
 
 ## Future Work
